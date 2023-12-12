@@ -73,6 +73,7 @@ h1, h2, h3, h4, h5, h6 {
 /*__________________________*/
 body {
   /*background: url("../img/bg.png") repeat;*/
+  background-color: white;
 }
 .header {
   background-color: #04081D;
