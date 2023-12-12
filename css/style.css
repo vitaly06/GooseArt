@@ -101,10 +101,21 @@ ul{
   justify-content: space-between;
   align-items: center;
 }
+.gradient{
+  background: linear-gradient(90.25deg, #3C99FB 20.81%, rgba(203, 95, 250, 0.8) 74.62%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 li{
   padding: 25px 0; 
 }
+.record{
+  color: white;
+  height: 40px;
+  width: 160px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 13px;
+  background: radial-gradient(106.56% 100% at 50% 0%, #31E4FA 0%, #2F6CFF 63.3%, rgba(223, 29, 255, 0.89) 100%);
 
-
-.logo {
 }
