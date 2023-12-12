@@ -72,6 +72,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 /*__________________________*/
 body {
+  /*background: url("../img/bg.png") repeat;*/
+}
+.header {
   background-color: #04081D;
 }
 .container{
@@ -91,15 +94,14 @@ body {
 p{
   line-height: 1.6;
 }
-.header {
-}
+
 ul{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 li{
-  padding-top: 25px; 
+  padding: 25px 0; 
 }
 
 
