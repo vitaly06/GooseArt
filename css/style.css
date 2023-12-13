@@ -125,7 +125,6 @@ li{
 /* 1 секция*/
 .container1{
   max-width: 100%;
-  
 }
 .main {
   
@@ -176,4 +175,61 @@ li{
   font-weight: 700;
   font-size: 16px;
   background: radial-gradient(106.56% 100% at 50% 0%, #31E4FA 0%, #2F6CFF 63.3%, rgba(223, 29, 255, 0.89) 100%);
+}
+/* секция 2*/
+.main2 {
+  
+}
+.parent-info {
+  font-family: 'Ubuntu', sans-serif;
+  min-height: 600px;
+  height: 100vh;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+/* заголовок*/
+.parent-info__title{
+  background: linear-gradient(90.53deg, #31C6FC 30.04%, #B826E9 92.19%),
+linear-gradient(0deg, #FFFFFF, #FFFFFF);
+-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
+  font-size: 48px;
+  font-weight: 700;
+}
+.parent-info__title::before{
+  content: url("../img/cube.png");
+  /*background: url("../img/cube.png") no-repeat;*/
+  
+}
+/* список маркерованный */
+.parent-info__textdiv{
+  min-height: 400px;
+  width: 100%;
+  background: url("../img/rectangle.png") top left/100% 100% no-repeat;
+}
+.parent-info__textdiv ul{
+  line-height: 1.6;
+  font-size: 30px;
+  align-content: flex-start;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  
+
+}
+.parent-info__textdiv ul li::before{
+  content: "\2022"; /* юникод точки */
+  color: white; /* Менять цвет */
+  font-weight: bold; /* Менять жирность */
+  display: inline-block; /* Расстояние между точкой и текстом */
+  width: 1em; /* Задать значение расстояния */
+}
+
+.container2 {
+  max-width: 100%;
 }
