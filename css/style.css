@@ -78,6 +78,7 @@ body {
 }
 /* Шапка сайта*/
 .header {
+  width: 100%;
   background-color: #04081D;
 }
 .container{
@@ -124,10 +125,13 @@ li{
 /* 1 секция*/
 .container1{
   max-width: 100%;
+  
 }
 .main {
+  
 }
 .welcome {
+  height: 100vh;
   min-height: 640px;
   color: #FFFFFF;
   display: flex;
