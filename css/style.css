@@ -72,7 +72,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 /*__________________________*/
 body {
-  /*background: url("../img/bg.png") repeat;*/
+  background: url("../img/bg_new.png") repeat;
+  background-size: cover;
   background-color: white;
 }
 /* Шапка сайта*/
@@ -121,3 +122,54 @@ li{
 
 }
 /* 1 секция*/
+.container1{
+  max-width: 100%;
+}
+.main {
+}
+.welcome {
+  min-height: 640px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../img/turtle.png") top right/50% 100% no-repeat,
+  url("../img/first_bg.png") top left/70% 100% no-repeat;
+              
+
+}
+.welcome__textdiv {
+  font-family: 'Ubuntu', sans-serif;
+  width: 50%;
+  margin-left: 35px;
+  text-align: center;
+}
+
+.welcome__title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 0.9;
+}
+.welcome__text {
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+.welcome__title2 {
+  margin-top: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 28px;
+  line-height: 1.1;
+}
+
+.record2 {
+  margin-top: 10px;
+  color: white;
+  height: 60px;
+  width: 190px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 16px;
+  background: radial-gradient(106.56% 100% at 50% 0%, #31E4FA 0%, #2F6CFF 63.3%, rgba(223, 29, 255, 0.89) 100%);
+}
