@@ -138,8 +138,6 @@ li{
   justify-content: center;
   background: url("../img/turtle.png") top right/50% 100% no-repeat,
   url("../img/first_bg.png") top left/70% 100% no-repeat;
-              
-
 }
 .welcome__textdiv {
   font-family: 'Ubuntu', sans-serif;
@@ -154,6 +152,7 @@ li{
   line-height: 0.9;
 }
 .welcome__text {
+  text-align: justify;
   margin-top: 10px;
   font-size: 18px;
   line-height: 1.6;
@@ -178,7 +177,11 @@ li{
 }
 /* секция 2*/
 .main2 {
-  
+  margin-top: 20px;
+  display: flex;
+
+  max-width: 100%;
+  position: relative;
 }
 .parent-info {
   font-family: 'Ubuntu', sans-serif;
@@ -187,40 +190,53 @@ li{
   color: #FFFFFF;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
+  
   
 }
 /* заголовок*/
 .parent-info__title{
-  background: linear-gradient(90.53deg, #31C6FC 30.04%, #B826E9 92.19%),
-linear-gradient(0deg, #FFFFFF, #FFFFFF);
--webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   line-height: 1;
   font-size: 48px;
   font-weight: 700;
 }
+.parent-info__title span{
+  background: linear-gradient(90.53deg, #31C6FC 30.04%, #B826E9 92.19%),
+linear-gradient(0deg, #FFFFFF, #FFFFFF);
+-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .parent-info__title::before{
+  display: inline-block;
+  vertical-align: middle;
   content: url("../img/cube.png");
-  /*background: url("../img/cube.png") no-repeat;*/
-  
 }
+
 /* список маркерованный */
-.parent-info__textdiv{
-  min-height: 400px;
+.container_text{
+  
   width: 100%;
-  background: url("../img/rectangle.png") top left/100% 100% no-repeat;
 }
+.parent-info__textdiv{
+  margin-left: 70px;
+  min-height: 400px;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../img/rectangle.png") top left/100% 100% no-repeat;
+  z-index: 299;
+}
+
 .parent-info__textdiv ul{
-  line-height: 1.6;
-  font-size: 30px;
-  align-content: flex-start;
-  justify-content: flex-start;
+  padding: 0 10px 0 15px;
+  line-height: 1.2;
+  font-size: 25px;
+  width: 50%;
+  font-weight: 700;
   display: flex;
   flex-direction: column;
-  
-
+ align-items: flex-start;
 }
 .parent-info__textdiv ul li::before{
   content: "\2022"; /* юникод точки */
@@ -229,7 +245,15 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
   display: inline-block; /* Расстояние между точкой и текстом */
   width: 1em; /* Задать значение расстояния */
 }
-
 .container2 {
   max-width: 100%;
 }
+.dragon{
+  height: 70%;
+  width: 60%;
+  z-index: 300;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/* СЕКЦИЯ 3 */
