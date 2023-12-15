@@ -75,6 +75,8 @@ body {
   background: url("../img/bg_new.png") repeat;
   background-size: cover;
   background-color: white;
+  color: #FFFFFF;
+  font-family: 'Ubuntu', sans-serif;
 }
 /* Шапка сайта*/
 .header {
@@ -87,7 +89,6 @@ body {
   margin: 0 auto;
 }
 .container a{
-  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   font-size: 16px;
   color: #FFFFFF;
@@ -113,7 +114,6 @@ li{
   padding: 25px 0; 
 }
 .record{
-  color: white;
   height: 40px;
   width: 160px;
   border-radius: 20px;
@@ -127,12 +127,10 @@ li{
   max-width: 100%;
 }
 .main {
-  
+  height: 100vh;
 }
 .welcome {
-  height: 100vh;
   min-height: 640px;
-  color: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -140,7 +138,6 @@ li{
   url("../img/first_bg.png") top left/70% 100% no-repeat;
 }
 .welcome__textdiv {
-  font-family: 'Ubuntu', sans-serif;
   width: 50%;
   margin-left: 35px;
   text-align: center;
@@ -167,7 +164,6 @@ li{
 
 .record2 {
   margin-top: 10px;
-  color: white;
   height: 60px;
   width: 190px;
   border-radius: 20px;
@@ -179,14 +175,12 @@ li{
 .main2 {
   margin-top: 20px;
   display: flex;
-
+  height: 100vh;
   max-width: 100%;
   position: relative;
 }
 .parent-info {
-  font-family: 'Ubuntu', sans-serif;
   min-height: 600px;
-  height: 100vh;
   color: #FFFFFF;
   display: flex;
   align-items: center;
@@ -202,8 +196,8 @@ li{
 }
 .parent-info__title span{
   background: linear-gradient(90.53deg, #31C6FC 30.04%, #B826E9 92.19%),
-linear-gradient(0deg, #FFFFFF, #FFFFFF);
--webkit-background-clip: text;
+  linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .parent-info__title::before{
@@ -219,7 +213,6 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
 }
 .parent-info__textdiv{
   margin-left: 70px;
-  min-height: 400px;
   max-width: 865px;
   display: flex;
   justify-content: center;
@@ -257,3 +250,43 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
   right: 0;
 }
 /* СЕКЦИЯ 3 */
+.free_lesson{
+  max-height: 232px;
+  
+  font-weight: 700;
+  background: url("../img/lesson_bg.png")top left/100% 100% no-repeat;
+}
+.h_free{
+  text-align: center;
+
+  font-size: 64px;
+  line-height: 2;
+}
+.record3 {
+  color: #FFFFFF;
+  display: block;
+  margin: 0 auto;
+  height: 77px;
+  width: 310px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  background: radial-gradient(106.56% 100% at 50% 0%, #31E4FA 0%, #2F6CFF 63.3%, rgba(223, 29, 255, 0.89) 100%);
+}
+/* СЕКЦИЯ 4*/
+.main4{
+  height: 100vh;
+}
+.professions{}
+.container4{
+  max-width: 1288px;
+}
+.professions_h{
+
+}
+.professions_h span{
+  background: linear-gradient(92deg, #31C6FC 46.4%, #BC21E8 94.38%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
