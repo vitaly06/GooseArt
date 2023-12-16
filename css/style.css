@@ -114,6 +114,7 @@ li{
   padding: 25px 0; 
 }
 .record{
+  color: #FFFFFF;
   height: 40px;
   width: 160px;
   border-radius: 20px;
@@ -163,6 +164,7 @@ li{
 }
 
 .record2 {
+  color: #FFFFFF;
   margin-top: 10px;
   height: 60px;
   width: 190px;
@@ -279,14 +281,70 @@ li{
   height: 100vh;
 }
 .professions{}
-.container4{
-  max-width: 1288px;
+.container4_text{
+  margin-top: 30px;
+  margin-left: 10%;
+  max-width: 646px;
 }
 .professions_h{
-
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1;
+}
+.professions_h::after{
+  display: inline-block;
+  content: url("../img/cube.png");
+  vertical-align: middle;
+  
+  
 }
 .professions_h span{
   background: linear-gradient(92deg, #31C6FC 46.4%, #BC21E8 94.38%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.record4 {
+  color: #FFFFFF;
+  display: block;
+  margin-top: 15px;
+  height: 60px;
+  width: 200px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.6;
+  background: radial-gradient(106.56% 100% at 50% 0%, #31E4FA 0%, #2F6CFF 63.3%, rgba(223, 29, 255, 0.89) 100%);
+}
+
+/* 1 LINE OF CARDS */
+.container4_firstline{
+  margin: 0 auto;
+  max-width: 796px;
+  max-height: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.card1{
+  /* CHANGE PICTURE */
+  background: url("../img/1.png") top left/100% 100% no-repeat;
+}
+.card2{
+  /* CHANGE PICTURE */
+  background: url("../img/2.png") top right/100% 100% no-repeat;
+}
+.container4_secondline{
+  max-width: 100%;
+  max-height: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.card4{
+  /* CHANGE PICTURE */
+  background: url("../img/1.png") top left/100% 100% no-repeat;
+}
+.card4{
+  /* CHANGE PICTURE */
+  background: url("../img/2.png") top right/100% 100% no-repeat;
 }
