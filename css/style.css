@@ -210,7 +210,8 @@ li{
 
 /* список маркерованный */
 .container_text{
-  
+  box-sizing: border-box;
+  padding: 3%;
   width: 100%;
 }
 .parent-info__textdiv{
@@ -225,6 +226,7 @@ li{
 
 .parent-info__textdiv ul{
   padding: 0 10px 0 15px;
+  box-sizing: b;
   line-height: 1.2;
   font-size: 25px;
   width: 100%;
@@ -244,8 +246,8 @@ li{
   max-width: 100%;
 }
 .dragon{
-  height: 65%;
-  width: 55%;
+  height: 60%;
+  width: 50%;
   z-index: 300;
   position: absolute;
   bottom: 0;
@@ -253,21 +255,25 @@ li{
 }
 /* СЕКЦИЯ 3 */
 .free_lesson{
-  max-height: 232px;
-  
+  max-height: 300px;
+  box-sizing: border-box;
+  padding: 1%;
   font-weight: 700;
   background: url("../img/lesson_bg.png")top left/100% 100% no-repeat;
+
+
 }
 .h_free{
   text-align: center;
-
-  font-size: 64px;
-  line-height: 2;
+  
+  font-size: 48px;
+  line-height: 1.5;
 }
 .record3 {
   color: #FFFFFF;
   display: block;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   height: 77px;
   width: 310px;
   border-radius: 20px;
@@ -278,12 +284,11 @@ li{
 }
 /* СЕКЦИЯ 4*/
 .main4{
-  height: 100vh;
 }
 .professions{}
 .container4_text{
   margin-top: 30px;
-  margin-left: 10%;
+  margin-left: 7%;
   max-width: 646px;
 }
 .professions_h{
@@ -295,8 +300,6 @@ li{
   display: inline-block;
   content: url("../img/cube.png");
   vertical-align: middle;
-  
-  
 }
 .professions_h span{
   background: linear-gradient(92deg, #31C6FC 46.4%, #BC21E8 94.38%);
@@ -334,17 +337,120 @@ li{
   background: url("../img/2.png") top right/100% 100% no-repeat;
 }
 .container4_secondline{
+  margin: 0 auto;
   max-width: 100%;
-  max-height: 500px;
+  max-height: 440px;
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
 }
-.card4{
+.card3{
   /* CHANGE PICTURE */
-  background: url("../img/1.png") top left/100% 100% no-repeat;
+  background: url("../img/3.png") top left/100% 100% no-repeat;
 }
 .card4{
   /* CHANGE PICTURE */
-  background: url("../img/2.png") top right/100% 100% no-repeat;
+  background: url("../img/4.png") top right/100% 100% no-repeat;
+}
+
+/* SECTION 5*/
+.main5{
+  margin-top: 20px;
+  max-width: 100%;
+}
+/* заголовок */ 
+.for_h::before{
+  display: inline-block;
+  content: url("../img/cube2.png");
+  vertical-align: middle;
+}
+.for_h{
+  margin-left: 7%;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1;
+}
+.for_h span{
+  background: linear-gradient(90.53deg, #31C6FC 30.04%, #B826E9 92.19%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* карты */
+.for_cards{
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 1;
+  display: flex;
+}
+.first_card{
+  box-sizing: border-box;
+  padding: 3%;
+  /*background: linear-gradient(300.27deg, rgba(255, 255, 255, 0.4536) 0%, rgba(56, 181, 252, 0.3752) 103.34%);*/
+  background: url("../img/for1.png") no-repeat;
+  background-size: cover;
+  width: 25%;
+}
+.second_card{
+  box-sizing: border-box;
+  padding: 3%;
+  /*background: linear-gradient(237.24deg, rgba(255, 255, 255, 0.3864) 1.69%, rgba(255, 255, 255, 0.2464) 71.11%);*/
+  background: url("../img/for2.png") no-repeat;
+  background-size: cover;
+  width: 25%;
+}
+/* SECTION 6*/
+.main6{
+  margin-top: 10px;
+  height: 100vh;
+}
+.works_container{
+  margin: 0 auto;
+  max-width: 1098px;
+}
+/* заголовок */
+.works_h{
+  text-align: right;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+}
+.works_h span{
+  background: linear-gradient(90.53deg, #31C6FC 30.04%, #B826E9 92.19%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.works_h::before{
+  display: inline-block;
+  content: url("../img/cube.png");
+  vertical-align: middle;
+}
+/* блок */
+.block_works{
+  background: radial-gradient(65.97% 92.77% at 113.3% 120.61%, rgba(62, 238, 227, 0.5) 0%, rgba(62, 69, 238, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  background: radial-gradient(60.52% 85.11% at 9.86% -26.12%, rgba(223, 29, 255, 0.35) 0%, rgba(72, 205, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  background: linear-gradient(97.94deg, rgba(255, 255, 255, 0.297) 0%, rgba(255, 255, 255, 0.162) 99.99%, rgba(37, 40, 58, 0.105) 100%);
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding: 4%;
+}
+.text{
+  max-width: 919px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 3%;
+}
+
+.work_list{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 0.6;
+}
+.work_list li::before{
+  content: "\2022"; /* юникод точки */
+  color: white; /* Менять цвет */
+  font-weight: bold; /* Менять жирность */
+  display: inline-block; /* Расстояние между точкой и текстом */
+  width: 1em; /* Задать значение расстояния */
 }

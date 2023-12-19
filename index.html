@@ -77,8 +77,140 @@
 				</div>
 				<div class="container4_secondline">
 					<div><img src="img/sova.png" alt="" class="sova"></div>
-					<div><img src="img/1.png" alt="" class="card3"></div>
-					<div><img src="img/2.png" alt="" class="card4"></div>
+					<div><img src="img/3.png" alt="" class="card3"></div>
+					<div><img src="img/4.png" alt="" class="card4"></div>
+				</div>
+			</section>
+		</main>
+
+		<main class="main5">
+			<section class="for">				
+				<div><h1 class="for_h">КОМУ <span>ПОДХОДИТ?</span></h1></div>
+				<div class="for_cards">
+					<div class="first_card">Тем, кто не имеет художественного образования и не работал в арт-индустрии, но хочет освоить творческую профессию.</div>
+					<div class="second_card">Выпускникам художественной школы или колледжа, которым требуется практика, чтобы в будущем работать в арт-индустрии</div>
+					<div class="first_card">Тем, кто хочет разнообразить рутину новым творческим хобби и обрести новые знакомства в арт-сфере</div>
+					<div class="second_card">Тем, кто хочет реализовать собственный творческий проект, но ощущает нехватку базовых знаний и навыков</div>
+
+				</div>
+			</section>
+		</main>
+
+		<main class="main6">
+			<section class="works">				
+				<div class="works_container">
+					<h1 class="works_h">РАБОТЫ <span>КУРАТОРА</span></h1>
+					<div class="block_works">
+						<div class="text">
+							<p>Куратором нашей школы является опытный художник и дизайнер с многолетним опытом работы в арт-индустрии. Она работала в крупных междунородных компаниях, таких как:</p>
+							<ul class="work_list">
+								<li>RedBark Studio (2D-художник,concept artist, visual development ) Минск</li>
+								<li>Saber Interactive Санкт-Петербург, 2D-художник</li>
+								<li>Saritasa Калифорния 2D-художник</li>
+								<li>ROCKSTONE Санкт-Петербург 2D-художник</li>
+							</ul>
+							<br>
+							<p>Так же прошла курсы такие как:</p>							
+							<ul class="work_list">
+								<li>Skills up school – 2D-графика Basic ( 2022г)</li>
+								<li>Smirnov School / Школа цифрового рисунка - Основы Blender (2023г)</li>
+								<li>Grafit academy- Стилизация ( 2023г)</li>
+							</ul>							
+						</div>	
+												<!-- Tailwind CSS -->
+						<script src="https://cdn.tailwindcss.com"></script>
+						<!-- Alpine.js -->
+						<script src="//unpkg.com/alpinejs" defer></script>
+
+						<div class="w-full  flex justify-center">
+							<div class="max-w-[919px] max-h-[350px]">
+								<div
+								x-data="{ activeSlide: 1, slideCount: 6 }"
+								class="overflow-hidden relative"
+								>
+								<!-- Slider -->
+								<!-- You can remove x-init if you dont want to autoplay -->
+								<div
+									class="whitespace-nowrap transition-transform duration-500 ease-in-out"
+									:style="'transform: translateX(-' + (activeSlide - 1) * 100.5 + '%)'"
+									x-init="setInterval(() => { activeSlide = activeSlide < slideCount ? activeSlide + 1 : 1 }, 5000)"
+								>
+									<!-- Item 1 -->
+									<div class="inline-block w-full">
+									<img
+										src="img/works1.png"
+										alt=""
+									/>
+									</div>
+									<!-- Item 2 -->
+									<div class="inline-block w-full">
+									<img
+										src="img/work2.png"
+										alt=""
+									/>
+									</div>
+									<!-- Item 3 -->
+									<div class="inline-block w-full">
+									<img
+										src="img/work3.png"
+										alt=""
+									/>
+									</div>
+									<!-- Item 4 -->
+									<div class="inline-block w-full">
+										<img
+										src="img/work4.png"
+										alt=""
+										/>
+									</div>
+									<!-- Item 5 -->
+									<div class="inline-block w-full">
+										<img
+										src="img/work5.png"
+										alt=""
+										/>
+									</div>
+									<!-- Item 6 -->
+									<div class="inline-block w-full">
+										<img
+										src="img/work6.png"
+										alt=""
+										/>
+									</div>
+								</div>
+
+								<!-- Prev/Next Arrows -->
+								<div class="absolute inset-0 flex items-center justify-between px-2">
+									<button
+									@click="activeSlide = activeSlide > 1 ? activeSlide - 1 : slideCount"
+									class="w-[30px] h-[30px] flex items-center bg-black/30 text-white p-2 rounded-full"
+									>
+									&#8592;
+									</button>
+									<button
+									@click="activeSlide = activeSlide < slideCount ? activeSlide + 1 : 1"
+									class="w-[30px] h-[30px] flex items-center bg-black/30 text-white p-2 rounded-full"
+									>
+									&#8594;
+									</button>
+								</div>
+
+								<!-- Dots Navigation -->
+								<div
+									class="absolute bottom-0 left-0 right-0 flex justify-center space-x-2 p-4"
+								>
+									<template x-for="slideIndex in slideCount" :key="slideIndex">
+									<button
+										@click="activeSlide = slideIndex"
+										class="h-2 w-2 rounded-full"
+										:class="{'bg-indigo-500': activeSlide === slideIndex, 'bg-white/50': activeSlide !== slideIndex}"
+									></button>
+									</template>
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 		</main>
