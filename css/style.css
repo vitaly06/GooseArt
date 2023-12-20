@@ -401,7 +401,6 @@ li{
 /* SECTION 6*/
 .main6{
   margin-top: 10px;
-  height: 100vh;
 }
 .works_container{
   margin: 0 auto;
@@ -453,4 +452,90 @@ li{
   font-weight: bold; /* Менять жирность */
   display: inline-block; /* Расстояние между точкой и текстом */
   width: 1em; /* Задать значение расстояния */
+}
+/* SECTION 7 */
+.main7{
+  margin-top: 20px;
+}
+.pastwork_container{ 
+  max-width: 982px;
+  margin: 0 auto;
+}
+/* заголовок */
+.pastwork_h{
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1;
+  text-align: right;
+}
+.pastwork_h span{
+  background: linear-gradient(92deg, #31C6FC 46.4%, #BC21E8 94.38%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.pastwork_h::before{
+  display: inline-block;
+  content: url("../img/cube3.png");
+  vertical-align: middle;
+}
+/* блок */
+.pastwork_block{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  border-radius: 15px;
+  background: radial-gradient(65.97% 92.77% at 113.3% 120.61%, rgba(62, 238, 227, 0.5) 0%, rgba(62, 69, 238, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  background: radial-gradient(60.52% 85.11% at 9.86% -26.12%, rgba(223, 29, 255, 0.35) 0%, rgba(72, 205, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  background: linear-gradient(97.94deg, rgba(255, 255, 255, 0.297) 0%, rgba(255, 255, 255, 0.162) 99.99%, rgba(37, 40, 58, 0.105) 100%);
+  box-sizing: border-box;
+  padding: 3%;
+}
+/* CONTACTS */
+.contact_container{
+  max-width: 680px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+}
+.contact_h{
+  font-weight: 700;
+  line-height: 1;
+  font-size: 48px;
+}
+.contact_h span{
+  background: linear-gradient(92.11deg, #2998D5 71.86%, rgba(186, 0, 217, 0.74) 86.61%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contact_h::before{
+  display: inline-block;
+  content: url("../img/cube4.png");
+  vertical-align: middle;
+}
+.city{
+  font-weight: 700;
+  line-height: 2;
+  font-size: 27px;
+}
+.address{
+  font-weight: 700;
+  line-height: 2;
+  font-size: 27px;
+}
+.number{
+  line-height: 1.5;
+  font-size: 36px;
+  font-weight: 700;
+}
+.line{
+  border: none;
+  height: 2px;
+  /* Set the hr color */
+  color: #ffffff;  /* old IE */
+  background-color: #ffffff;  /* Modern Browsers */
 }
