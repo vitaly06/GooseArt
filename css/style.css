@@ -72,17 +72,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 /*__________________________*/
 body {
-  background: url("../img/bg_new.png") repeat;
+  background: url("../img/bg_new.png") top left/ auto auto repeat;
   background-size: cover;
   background-color: white;
   color: #FFFFFF;
   font-family: 'Ubuntu', sans-serif;
+}
+.burger-checkbox{
+  display: none;
+}
+.burger{
+  display: none;
 }
 /* Шапка сайта*/
 .header {
   width: 100%;
   background-color: #04081D;
 }
+/*#pull{
+  display: none;
+}*/
 .container{
   max-width: 695px;
   padding: 0 15px;
@@ -100,7 +109,8 @@ p{
   line-height: 1.6;
 }
 
-ul{
+.container ul{
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -128,15 +138,15 @@ li{
   max-width: 100%;
 }
 .main {
-  height: 100vh;
+  
 }
 .welcome {
   min-height: 640px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url("../img/turtle.png") top right/50% 100% no-repeat,
-  url("../img/first_bg.png") top left/70% 100% no-repeat;
+  background: url("../img/turtle.png") top right/auto auto no-repeat,
+  url("../img/first_bg.png") top left/auto auto no-repeat;
 }
 .welcome__textdiv {
   width: 50%;
@@ -177,7 +187,6 @@ li{
 .main2 {
   margin-top: 20px;
   display: flex;
-  height: 100vh;
   max-width: 100%;
   position: relative;
 }
@@ -226,7 +235,7 @@ li{
 
 .parent-info__textdiv ul{
   padding: 0 10px 0 15px;
-  box-sizing: b;
+  box-sizing: border-box;
   line-height: 1.2;
   font-size: 25px;
   width: 100%;
@@ -246,8 +255,8 @@ li{
   max-width: 100%;
 }
 .dragon{
-  height: 60%;
-  width: 50%;
+  height: auto;
+  width: auto;
   z-index: 300;
   position: absolute;
   bottom: 0;
@@ -330,11 +339,11 @@ li{
 }
 .card1{
   /* CHANGE PICTURE */
-  background: url("../img/1.png") top left/100% 100% no-repeat;
+  background: top left/auto auto no-repeat;
 }
 .card2{
   /* CHANGE PICTURE */
-  background: url("../img/2.png") top right/100% 100% no-repeat;
+  background: top right/auto auto no-repeat;
 }
 .container4_secondline{
   margin: 0 auto;
@@ -346,11 +355,11 @@ li{
 }
 .card3{
   /* CHANGE PICTURE */
-  background: url("../img/3.png") top left/100% 100% no-repeat;
+  background: top left/auto auto no-repeat;
 }
 .card4{
   /* CHANGE PICTURE */
-  background: url("../img/4.png") top right/100% 100% no-repeat;
+  background: top right/auto auto no-repeat;
 }
 
 /* SECTION 5*/
@@ -538,4 +547,92 @@ li{
   /* Set the hr color */
   color: #ffffff;  /* old IE */
   background-color: #ffffff;  /* Modern Browsers */
+}
+
+@media only screen and (max-width:600px){
+  #hide{
+    overflow
+    : hidden;
+  }
+  .header{
+    min-height: 52px;
+  }
+  .burger-checkbox {
+    position: absolute;
+    
+    visibility: hidden;
+  }
+  .burger {
+    padding-top: 15px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    border: none;
+    background: transparent;
+    width: 40px;
+    height: 26px;
+  }
+  .burger::before,
+  .burger::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    background: white;
+  }
+  .burger::before {
+    top: 0;
+    box-shadow: 0 11px 0 white;
+    transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+  }
+  .burger::after{
+    bottom: 0;
+    transition: bottom .3s .15s, transform .3s;
+  }
+  .burger-checkbox:checked + .burger::before {
+    top: 11px;
+    transform: rotate(45deg);
+    box-shadow: 0 6px 0 rgba(0,0,0,0);
+    transition: box-shadow .15s, top .3s, transform .3s .15s;
+  }
+  .burger-checkbox:checked + .burger::after {
+    bottom: 11px;
+    transform: rotate(-45deg);
+    transition: bottom .3s, transform .3s .15s;
+  }
+  .menu-list {
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: grid;
+    gap: 12px;
+    padding: 42px 0;
+    margin: 0;
+    background: #04081D;
+    list-style-type: none;
+    transform: translateX(-100%);
+    transition: .3s;
+    width: 200px;
+  }
+  .menu-list li {
+    display: block;
+    padding: 8px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .container ul li :hover {
+    background: rgba(255,255,255,.2)
+  }
+  .burger-checkbox:checked ~ .menu-list {
+    transform: translateX(0);
+  }
+  .menu-list{
+    display: flex;
+    flex-direction: column;
+  }
 }

@@ -16,14 +16,17 @@
 	<!-- Отображаемое тело страницы -->
 	<body>
 		<header class="header">
-			<div class="container">				
-				<ul>
-					<li><img src="img/logo.svg" alt="" class="logo"></li>
-					<li><a href="#!" class="gradient">о нас</a></li>
-					<li><a href="#!">профессии</a></li>
-					<li><a href="#!">контактные данные</a></li>
-					<li><a href="#!"><button class="record">записаться</button></a></li>
-				</ul>
+			<div class="container">		
+				<input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+    			<label for="burger-checkbox" class="burger"></label>		
+				<ul class="menu-list">
+					<li id="hide"><img src="img/logo.svg" alt="" class="logo"></li>
+					<li id="hide"><a href="#!" class="gradient">о нас</a></li>
+					<li id="hide"><a href="#!" id="hide">профессии</a></li>
+					<li id="hide"><a href="#!">контактные данные</a></li>
+					<li id="hide"><a href="#!"><button class="record">записаться</button></a></li>	
+					<!--<a href="#" id="pull">Меню</a>-->				
+				</ul>				
 			</div>
 		</header>
 
@@ -214,7 +217,6 @@
 				</div>
 			</section>
 		</main>
-
 		<main class="main7">
 			<section class="pastwork">				
 				<div class="pastwork_container">
@@ -237,6 +239,8 @@
 				</div>
 			</section>
 		</main>
+		<div class="map">
 		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A40d278621081333a7ce5fa63ada32adba9c589817ec1bc49a3a9a81137b33d1c&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+	</div>
 	</body>
 </html>
