@@ -71,6 +71,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 /*__________________________*/
+html {
+  overflow-x: hidden;
+}
+.turtle{
+  display: none;
+}
 body {
   background: url("../img/bg_new.png");
   background-repeat: no-repeat;
@@ -141,15 +147,14 @@ li{
   max-width: 100%;
 }
 .main {
-  
 }
 .welcome {
   min-height: 640px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url("../img/turtle.png") top right/auto auto no-repeat,
-  url("../img/first_bg.png") top left/auto auto no-repeat;
+  background: url("../img/turtle.png") bottom right/auto auto no-repeat,
+  url("../img/first_bg.png") top left/70% 100% no-repeat;
 }
 .welcome__textdiv {
   width: 50%;
@@ -892,7 +897,38 @@ div.form-example {
 }
 @media only screen and (max-width:1055px){
   .welcome__textdiv {
-    width: 30%;
+    width: 45%;
+  }
+  .welcome {
+    background: url("../img/turtle.png") bottom right/50% auto no-repeat,
+    url("../img/first_bg.png") top left/80% 100% no-repeat;
+    
+  }
+}
+@media only screen and (max-width:700px){
+  .welcome__textdiv {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .welcome {
+    background: url("../img/first_bg.png") top left/150% 100% no-repeat;   
+  }
+  .turtle{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (max-width:580px){
+  .welcome__textdiv {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .welcome {
+    background: url("../img/first_bg.png") top left/150% 100% no-repeat;
+    
   }
 }
 /* 2 СЕКЦИЯ */
@@ -992,6 +1028,5 @@ div.form-example {
   }
   .parent-info__title::before{
     content: '';
-  }
-  
+  } 
 }
