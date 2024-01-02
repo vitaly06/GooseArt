@@ -44,16 +44,16 @@
     			<label for="burger-checkbox" class="burger"></label>		
 				<ul class="menu-list">
 					<li id="hide"><img src="img/logo.svg" alt="" class="logo"></li>
-					<li id="hide"><a href="#!" class="gradient">о нас</a></li>
-					<li id="hide"><a href="#!" id="hide">профессии</a></li>
-					<li id="hide"><a href="#!">контактные данные</a></li>
+					<li id="hide"><a href="#us" class="gradient">о нас</a></li>
+					<li id="hide"><a href="#professions" id="hide">профессии</a></li>
+					<li id="hide"><a href="#contacts">контактные данные</a></li>
 					<li id="hide"><a href="#openModal"><button class="record">записаться</button></a></li>	
 					<!--<a href="#" id="pull">Меню</a>-->				
 				</ul>				
 			</div>
 		</header>
 
-		<main class="main">
+		<main class="main" id="us">
 			<section class="welcome">
 				<div class="container1">
 					<div class="welcome__textdiv">
@@ -92,7 +92,7 @@
 			<a href="#openModal"><button class="record3">Записаться</button></a>
 		</div>
 
-		<main class="main4">
+		<main class="main4" id="professions">
 			<section class="professions">				
 				<div class="container4_text">
 					<h1 class="professions_h">НАШИ <span>ПРОФЕССИИ</span></h1>
@@ -122,7 +122,7 @@
 				</div>
 			</section>
 		</main>
-		
+
 		<main class="main6">
 			<section class="works">				
 				<div class="works_container">
@@ -254,7 +254,7 @@
 						<a href="#openModal"><button class="record4">Узнать подробнее</button></a>
 					</div>
 				</div>
-				<div class="contact_container">
+				<div class="contact_container" id="contacts">
 					<h1 class="contact_h">КОНТАКТНЫЕ <span>ДАННЫЕ</span></h1>
 					<p class="city">ОРЕНБУРГ</p>
 					<hr class="line">
@@ -267,4 +267,19 @@
 		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A40d278621081333a7ce5fa63ada32adba9c589817ec1bc49a3a9a81137b33d1c&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
 	</div>
 	</body>
+	<script>		
+		
+			const smoothLinks = document.querySelectorAll('a[href^="#"]');
+			for (let smoothLink of smoothLinks) {
+				smoothLink.addEventListener('click', function (e) {
+					e.preventDefault();
+					const id = smoothLink.getAttribute('href');
+
+					document.querySelector(id).scrollIntoView({
+						behavior: 'smooth',
+						block: 'start'
+					});
+				});
+			};
+	</script>
 </html>
