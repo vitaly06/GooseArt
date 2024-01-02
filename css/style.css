@@ -342,14 +342,16 @@ li{
   max-width: 796px;
   max-height: 500px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: flex-end;
 }
 .card1{
   /* CHANGE PICTURE */
+  width: 100%;
   background: top left/auto auto no-repeat;
 }
 .card2{
+  width: 100%;
   /* CHANGE PICTURE */
   background: top right/auto auto no-repeat;
 }
@@ -358,7 +360,7 @@ li{
   max-width: 100%;
   max-height: 440px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: flex-end;
 }
 .card3{
@@ -369,7 +371,6 @@ li{
   /* CHANGE PICTURE */
   background: top right/auto auto no-repeat;
 }
-
 /* SECTION 5*/
 .main5{
   margin-top: 20px;
@@ -943,9 +944,6 @@ div.form-example {
     font-size: 40px;
     text-align: center;
   }
-  .dragon{
-    right: -50px;
-  }
 }
 @media only screen and (max-width: 1270px){
   .container2{
@@ -1030,3 +1028,91 @@ div.form-example {
     content: '';
   } 
 }
+/* СЕКЦИЯ 3 */
+@media only screen and (max-width: 600px){
+  .h_free{
+    font-size: 36px;
+  }
+  .record3 {
+    color: #FFFFFF;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px;
+    width: 280px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1;
+    background: radial-gradient(106.56% 100% at 50% 0%, #31E4FA 0%, #2F6CFF 63.3%, rgba(223, 29, 255, 0.89) 100%);
+  }
+}
+@media only screen and (max-width: 310px){
+  .h_free{
+    font-size: 24px;
+  }
+  .record3 {
+    color: #FFFFFF;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1;
+    background: radial-gradient(106.56% 100% at 50% 0%, #31E4FA 0%, #2F6CFF 63.3%, rgba(223, 29, 255, 0.89) 100%);
+  }
+}
+/* СЕКЦИЯ ПРОФЕССИИ */
+@media only screen and (max-width: 630px){
+  .container4_text{
+    text-align: center;
+  }
+  .professions_h{
+    font-size: 36px;
+  }
+  .record4 {
+    margin: 0 auto;
+    height: 50px;
+    width: 200px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+@media only screen and (max-width: 385px){
+  .professions_h{
+    font-size: 24px;
+  }
+  .record4 {
+    margin: 0 auto;
+    height: 50px;
+    width: 200px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+/* БЛОКИ */ 
+@media only screen and (max-width: 1110px){
+  /* карты */
+  .for_h{
+    text-align: center;
+    margin: 0 auto;
+  }
+  .for_cards{
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .first_card{
+    width: 75%;
+  }
+  .second_card{
+    width: 75%;
+  }
+} 
