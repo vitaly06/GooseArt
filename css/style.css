@@ -72,8 +72,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 /*__________________________*/
 body {
-  background: url("../img/bg_new.png") top left/ auto auto repeat;
+  background: url("../img/bg_new.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
+  background-position: center center;
   background-color: white;
   color: #FFFFFF;
   font-family: 'Ubuntu', sans-serif;
@@ -635,4 +638,360 @@ li{
     display: flex;
     flex-direction: column;
   }
+}
+
+
+/* свойства модального окна по умолчанию */
+.modal {
+  position: fixed; /* фиксированное положение */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.5); /* цвет фона */
+  z-index: 1050;
+  opacity: 0; /* по умолчанию модальное окно прозрачно */
+  -webkit-transition: opacity 200ms ease-in; 
+  -moz-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in; /* анимация перехода */
+  pointer-events: none; /* элемент невидим для событий мыши */
+  margin: 0;
+  padding: 0;
+}
+/* при отображении модального окно */
+.modal:target {
+  opacity: 1; /* делаем окно видимым */
+  pointer-events: auto; /* элемент видим для событий мыши */
+  overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
+}
+/* ширина модального окна и его отступы от экрана */
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+}
+@media (min-width: 576px) {
+.modal-dialog {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+    max-width: 500px;
+    margin: 30px auto; /* для отображения модального окна по центру */
+}
+}
+/* свойства для блока, содержащего контент модального окна */ 
+.modal-content {
+  background: linear-gradient(90.53deg, #31C6FC 30.04%, #B826E9 92.19%);
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 15px;
+  outline: 0;
+}
+@media (min-width: 768px) {
+.modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+}
+/* свойства для заголовка модального окна */
+.modal-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #eceeef;
+}
+.modal-title {
+  margin: 0 auto;
+  line-height: 1.5;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: white;
+}
+/* свойства для кнопки "Закрыть" */
+.close {
+  float: right;
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: .5;
+  text-decoration: none;
+}
+/* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+.close:focus, .close:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: .75;
+}
+/* свойства для блока, содержащего основное содержимое окна */
+.modal-body {
+  margin: 0 auto;
+  color: white;
+position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 15px;
+  overflow: auto;
+}
+form.form-example {
+  display: table;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input{
+  color: black;
+}
+div.form-example {
+  display: table-row;
+  display: flex;
+  flex-direction: column;
+}
+.modall,
+.modali {
+  display: table-cell;
+  margin-bottom: 10px;
+}
+
+.modall {
+  padding-right: 10px;
+}
+.modal_submit{
+  margin: 0 auto;
+  color: #FFFFFF;
+  display: block;
+  margin-top: 15px;
+  height: 50px;
+  width: 150px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.6;
+  background: radial-gradient(106.56% 100% at 50% 0%, #31E4FA 0%, #2F6CFF 63.3%, rgba(223, 29, 255, 0.89) 100%);
+}
+
+/* АДАПТИВ */
+@media only screen and (max-width:600px){
+  #hide{
+    overflow
+    : hidden;
+  }
+  .header{
+    min-height: 52px;
+  }
+  .burger-checkbox {
+    position: absolute;
+    
+    visibility: hidden;
+  }
+  .burger {
+    padding-top: 15px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    border: none;
+    background: transparent;
+    width: 40px;
+    height: 26px;
+  }
+  .burger::before,
+  .burger::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    background: white;
+  }
+  .burger::before {
+    top: 0;
+    box-shadow: 0 11px 0 white;
+    transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+  }
+  .burger::after{
+    bottom: 0;
+    transition: bottom .3s .15s, transform .3s;
+  }
+  .burger-checkbox:checked + .burger::before {
+    top: 11px;
+    transform: rotate(50deg);
+    box-shadow: 0 6px 0 rgba(0,0,0,0);
+    transition: box-shadow .15s, top .3s, transform .3s .15s;
+  }
+  .burger-checkbox:checked + .burger::after {
+    bottom: 11px;
+    transform: rotate(-50deg);
+    transition: bottom .3s, transform .3s .15s;
+  }
+  .menu-list {
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: grid;
+    gap: 12px;
+    padding: 42px 0;
+    margin: 0;
+    background: #04081D;
+    list-style-type: none;
+    transform: translateX(-100%);
+    transition: .3s;
+    width: 200px;
+  }
+  .menu-list li {
+    display: block;
+    padding: 8px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .container ul li :hover {
+    background: rgba(255,255,255,.2)
+  }
+  .burger-checkbox:checked ~ .menu-list {
+    transform: translateX(0);
+  }
+  .menu-list{
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* 1 СЕКЦИЯ */
+@media only screen and (max-width:1180px){
+  .welcome__textdiv {
+    width: 40%;
+  }
+}
+@media only screen and (max-width:1055px){
+  .welcome__textdiv {
+    width: 30%;
+  }
+}
+/* 2 СЕКЦИЯ */
+@media only screen and (max-width: 1350px){
+  .container2{
+    max-width: 90%;
+  }
+  .parent-info {
+    align-items: flex-start;
+  }
+  .parent-info__title{
+    font-size: 40px;
+    text-align: center;
+  }
+  .dragon{
+    right: -50px;
+  }
+}
+@media only screen and (max-width: 1270px){
+  .container2{
+    max-width: 85%;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 1230px){
+  .container2{
+    max-width: 80%;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 1090px){
+  .container2{
+    max-width: 70%;
+    margin-bottom: 20px;
+  }
+  .dragon{
+    max-width: 60%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 1050px){
+  .parent-info__title{
+    font-size: 18px;
+  }
+  .container_text ul{
+    font-size: 20px;
+  }
+  .dragon{
+    max-width: 60%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 910px){
+  .dragon{
+    max-width: 55%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 760px){
+  .parent-info__title{
+    font-size: 14px;
+  }
+  .container2{
+    max-width: 75%;
+  }
+  .dragon{
+    max-width: 50%;
+    height: auto;
+  }
+  .parent-info {
+    align-items: flex-start;
+  }
+  .parent-info__textdiv{
+    margin-left: 5px;
+  }
+}
+@media only screen and (max-width: 690px){
+  .container2{
+    max-width: 100%;
+  }
+  .parent-info__title{
+    font-size: 24px;
+  }
+  .parent-info__textdiv{
+    margin-left: 0px;
+  }
+  .dragon{
+    position: relative;
+    right: 0;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 50%;
+  }
+  .parent-info__textdiv{
+    margin-left: 5px;
+  }
+  .parent-info__title::before{
+    content: '';
+  }
+  
 }

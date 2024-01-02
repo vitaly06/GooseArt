@@ -15,6 +15,29 @@
 	</head>
 	<!-- Отображаемое тело страницы -->
 	<body>
+		<div id="openModal" class="modal">
+			<div class="modal-dialog">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <h3 class="modal-title">Записаться</h3>
+				  <a href="#close" title="Close" class="close">×</a>
+				</div>
+				<div class="modal-body">    
+				  <form method="post" action="#" class="form-example">
+					<div class="form-example">
+					<label class="modall" for="name">ФИО:</label>
+					<input class="modali" style="border: 1px solid black;" type="text" name="name" id="name" required>
+					</div>
+					<div class="form-example">
+					<label class="modall" for="number">Номер телефона:</label>
+					<input class="modali" style="border: 1px solid black;" type="tel" name="number" id="number">
+					</div>
+						<input class="modal_submit" type="submit" value="Записаться" />
+				  </form>
+				</div>
+			  </div>
+			</div>
+		  </div>
 		<header class="header">
 			<div class="container">		
 				<input type="checkbox" id="burger-checkbox" class="burger-checkbox">
@@ -24,7 +47,7 @@
 					<li id="hide"><a href="#!" class="gradient">о нас</a></li>
 					<li id="hide"><a href="#!" id="hide">профессии</a></li>
 					<li id="hide"><a href="#!">контактные данные</a></li>
-					<li id="hide"><a href="#!"><button class="record">записаться</button></a></li>	
+					<li id="hide"><a href="#openModal"><button class="record">записаться</button></a></li>	
 					<!--<a href="#" id="pull">Меню</a>-->				
 				</ul>				
 			</div>
@@ -37,7 +60,7 @@
 						<h1 class="welcome__title">GooseArt School</h1>
 						<h2 class="welcome__title2">Школа компьютерной графики</h2>
 						<p class="welcome__text">Школа рисунка и цифровой графики "DigitalArt" предлагает обучение 3D и 2D рисункам, моделированию и веб-дизайну. В нашей школе вы сможете освоить различные программы для создания качественных проектов, такие как Adobe Photoshop, Adobe Illustrator, Blender и другие. Кроме того, мы планируем внедрить программирование в нашу образовательную программу, чтобы наши студенты могли создавать не только красивые, но и функциональные проекты.</p>
-						<a href="#!"><button class="record2">Записаться</button></a>
+						<a href="#openModal"><button class="record2">Записаться</button></a>
 					</div>
 				</div>
 			</section>
@@ -65,14 +88,14 @@
 
 		<div class="free_lesson">
 			<h1 class="h_free">ПЕРВОЕ ПРОБНОЕ ЗАНЯТИЕ БЕСПЛАТНО!</h1>
-			<a href="#!"><button class="record3">Записаться</button></a>
+			<a href="#openModal"><button class="record3">Записаться</button></a>
 		</div>
 
 		<main class="main4">
 			<section class="professions">				
 				<div class="container4_text">
 					<h1 class="professions_h">НАШИ <span>ПРОФЕССИИ</span></h1>
-					<a href="#!"><button class="record4">Узнать подробнее</button></a>
+					<a href="#openModal"><button class="record4">Узнать подробнее</button></a>
 				</div>
 				<div class="container4_firstline">
 					<div><img src="img/1.png" alt="" class="card1"></div>
@@ -227,7 +250,7 @@
 						<p class="past2">
 							Наши выпускники могут претендовать на работу в качестве художников-иллюстраторов, дизайнеров, аниматоров, графических дизайнеров, веб-дизайнеров, UX/UI дизайнеров и многих других творческих профессий. Они также могут работать на фрилансе и предоставлять свои услуги на различных платформах для фрилансеров.
 						</p>
-						<a href="#!"><button class="record4">Узнать подробнее</button></a>
+						<a href="#openModal"><button class="record4">Узнать подробнее</button></a>
 					</div>
 				</div>
 				<div class="contact_container">
