@@ -1009,6 +1009,7 @@ div.form-example {
     max-width: 100%;
   }
   .parent-info__title{
+    margin: 10px 0;
     font-size: 24px;
   }
   .parent-info__textdiv{
@@ -1069,6 +1070,8 @@ div.form-example {
 @media only screen and (max-width: 630px){
   .container4_text{
     text-align: center;
+    margin: 0 auto;
+    margin-top: 15px;
   }
   .professions_h{
     font-size: 36px;
@@ -1098,7 +1101,7 @@ div.form-example {
   /* карты */
   .for_h{
     text-align: center;
-    margin: 0 auto;
+    margin: 10px auto;
   }
   .for_cards{
     font-weight: 700;
