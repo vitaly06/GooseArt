@@ -302,6 +302,9 @@ li{
   background: radial-gradient(106.56% 100% at 50% 0%, #31E4FA 0%, #2F6CFF 63.3%, rgba(223, 29, 255, 0.89) 100%);
 }
 /* СЕКЦИЯ 4*/
+.sova2{
+  display: none;
+}
 .main4{
 }
 .professions{}
@@ -365,6 +368,10 @@ li{
   justify-content: space-evenly;
   align-items: flex-end;
 }
+/*.sova{
+  max-width: 298px;
+  flex-wrap: wrap;
+}*/
 .card3{
   /* CHANGE PICTURE */
   background: top left/auto auto no-repeat;
@@ -374,6 +381,7 @@ li{
   background: top right/auto auto no-repeat;
 }
 /* SECTION 5*/
+
 .main5{
   margin-top: 20px;
   max-width: 100%;
@@ -419,6 +427,7 @@ li{
   width: 25%;
 }
 /* SECTION 6*/
+
 .main6{
   margin-top: 10px;
 }
@@ -1029,6 +1038,21 @@ div.form-example {
     font-size: 18px;
   }
 }
+@media only screen and (max-width: 1100px){
+  .hide_sova{
+    display: none;
+  }
+  .sova2{
+    display: block;
+    margin: 0 auto;
+  }
+  .container4_secondline{
+    margin: 0 auto;
+    max-width: 796px;
+    max-height: 500px;
+
+  }
+}
 /* СЕКЦИЯ ПРОФЕССИИ */
 @media only screen and (max-width: 630px){
   .container4_text{
@@ -1046,10 +1070,11 @@ div.form-example {
     font-size: 16px;
     line-height: 1.6;
   }
+
 }
 @media only screen and (max-width: 385px){
   .professions_h{
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 15px;
   }
   .record4 {
@@ -1062,10 +1087,23 @@ div.form-example {
   .professions_h::before{
     display: block;
     content: url("../img/cube.png");
+    transform: scale(.7);
     vertical-align: middle;
   }
   .professions_h::after{
     content: '';
+  }
+}
+@media only screen and (max-width: 650px){
+  .container4_firstline div{
+    width: 40%;
+    height: auto;
+  }
+  .container4_secondline div{
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40%;
+    height: auto;
   }
 }
 /* БЛОКИ */ 
