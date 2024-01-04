@@ -1093,7 +1093,7 @@ div.form-example {
 }
 @media only screen and (max-width: 385px){
   .professions_h{
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 15px;
   }
   .record4 {
@@ -1103,12 +1103,13 @@ div.form-example {
     font-size: 16px;
     line-height: 1.6;
   }
-  .professions_h::before{
+  .professions_h::after{
     display: block;
     content: url("../img/cube.png");
-    transform: scale(.7);
+    transform: scale(.6);
     vertical-align: middle;
   }
+
   .sova2{
     max-height: 250px;
     width: auto;
