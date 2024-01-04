@@ -170,7 +170,7 @@ li{
   line-height: 0.9;
 }
 .welcome__text {
-  text-align: justify;
+  text-align: center;
   margin-top: 10px;
   font-size: 18px;
   line-height: 1.6;
@@ -967,6 +967,9 @@ div.form-example {
   } 
 }
 @media only screen and (max-width: 580px){
+  .parent-info__title{
+    line-height: 1.3;
+  }
   .parent-info__textdiv ul{
     font-size: 16px;
     line-height: 1;
@@ -1087,7 +1090,6 @@ div.form-example {
     font-size: 16px;
     line-height: 1.6;
   }
-
 }
 @media only screen and (max-width: 385px){
   .professions_h{
