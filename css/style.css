@@ -241,6 +241,7 @@ li{
   align-items: center;
   background: url("../img/rectangle.png") top left/100% 100% no-repeat;
   z-index: 299;
+  border-radius: 15px;
 }
 
 .parent-info__textdiv ul{
@@ -339,6 +340,9 @@ li{
   font-size: 16px;
   line-height: 1.6;
   background: radial-gradient(106.56% 100% at 50% 0%, #31E4FA 0%, #2F6CFF 63.3%, rgba(223, 29, 255, 0.89) 100%);
+}
+.sova{
+  max-height: 400px;
 }
 
 /* 1 LINE OF CARDS */
@@ -454,6 +458,7 @@ li{
 }
 /* блок */
 .block_works{
+  
   background: radial-gradient(65.97% 92.77% at 113.3% 120.61%, rgba(62, 238, 227, 0.5) 0%, rgba(62, 69, 238, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
   background: radial-gradient(60.52% 85.11% at 9.86% -26.12%, rgba(223, 29, 255, 0.35) 0%, rgba(72, 205, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
   background: linear-gradient(97.94deg, rgba(255, 255, 255, 0.297) 0%, rgba(255, 255, 255, 0.162) 99.99%, rgba(37, 40, 58, 0.105) 100%);
@@ -523,6 +528,7 @@ li{
   box-sizing: border-box;
   padding: 3%;
 }
+
 /* CONTACTS */
 .contact_container{
   max-width: 680px;
@@ -962,14 +968,24 @@ div.form-example {
 }
 @media only screen and (max-width: 580px){
   .parent-info__textdiv ul{
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 1;
   }
-  .parent-info__textdiv{
-    max-width: 100%;
-    background: url("../img/rectangle.png") top left/100% 100% no-repeat;
-    z-index: 299;
+  .parent-info__textdiv ul li{
+    margin: -15px 0;
   }
 }
+@media only screen and (max-width: 350px){
+  .parent-info__textdiv ul{
+    font-size: 14px;
+    line-height: 1;
+  }
+  .parent-info__textdiv ul li{
+    margin: -15px 0;
+  }
+
+}
+
 @media only screen and (min-width:1800px){
   .dragon{
     height: 100%;
@@ -1043,6 +1059,7 @@ div.form-example {
     display: none;
   }
   .sova2{
+    max-height: 400px;
     display: block;
     margin: 0 auto;
   }
@@ -1090,8 +1107,9 @@ div.form-example {
     transform: scale(.7);
     vertical-align: middle;
   }
-  .professions_h::after{
-    content: '';
+  .sova2{
+    max-height: 250px;
+    width: auto;
   }
 }
 @media only screen and (max-width: 650px){
@@ -1111,24 +1129,33 @@ div.form-example {
   /* карты */
   .for_h{
     text-align: center;
-    margin: 10px auto;
+    margin: 30px auto;
   }
   .for_cards{
+    text-align: center;
     font-weight: 700;
     font-size: 21px;
     line-height: 1;
-    display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
   }
   .first_card{
+    margin-bottom: 1rem;
     width: 75%;
+    border-radius: 15px;
   }
   .second_card{
+    margin-bottom: 1rem;
     width: 75%;
+    border-radius: 15px;
   }
-} 
+}
+@media only screen and (max-width: 400px){
+  .for_cards{
+    font-size: 18px;
+  }
+}  
 /* РАБОТЫ КУРАТОРА */
 @media only screen and (max-width: 1100px){
   .works_h{
@@ -1151,9 +1178,9 @@ div.form-example {
     line-height: 1.2;
   }
 }
-@media only screen and (max-width: 580px){
+@media only screen and (max-width: 450px){
   .works_h{
-    font-size: 36px;
+    font-size: 36px; 
     text-align: center;
     margin: 0 auto;
     margin-bottom: 20px;
@@ -1162,6 +1189,9 @@ div.form-example {
     display: block;
     content: url("../img/cube.png");
     vertical-align: middle;
+  }
+  .text{
+    font-size: 14px;
   }
 }
 /* ДАЛЬНЕЙШЕЕ ТРУДОУСТРОЙСТВО */
@@ -1175,6 +1205,24 @@ div.form-example {
     text-align: center;
   }
 }
+@media only screen and (max-width: 960px){
+  /* заголовок */
+  .pastwork_h{
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1;
+    text-align: center;
+  }
+  .pastwork_h::before{
+    display: block;
+    content: url("../img/cube3.png");
+    vertical-align: middle;
+  }
+  .pastwork_h span{
+    display: block;
+  }
+}
 @media only screen and (max-width: 500px){
   /* заголовок */
   .pastwork_h{
@@ -1184,19 +1232,23 @@ div.form-example {
     font-size: 20px;
     line-height: 1;
   }
+  .pastwork_h::before{
+    display: block;
+    content: url("../img/cube3.png");
+    vertical-align: middle;
+    transform: scale(.7);
+  }
 }
 @media only screen and (max-width: 380px){
   /* заголовок */
   .pastwork_h{
     font-size: 30px;
   }
-  .pastwork_h::after{
-    display: inline-block;
+  .pastwork_h::before{
+    display: block;
     content: url("../img/cube3.png");
     vertical-align: middle;
-  }
-  .pastwork_h::before{
-    content: '';
+    transform: scale(.7);
   }
   .pastwork_block{
     font-size: 18px;
@@ -1207,6 +1259,10 @@ div.form-example {
 @media only screen and (max-width: 660px){
   .contact_container{
     text-align: center;
+  }
+  .contact_h::before{
+    display: block;
+    transform: scale(0.8);
   }
 }
 @media only screen and (max-width: 420px){
@@ -1232,5 +1288,6 @@ div.form-example {
   }
   .contact_h::before{
     display: block;
+    transform: scale(0.7);
   }
 }
