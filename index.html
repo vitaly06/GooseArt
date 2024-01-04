@@ -151,7 +151,7 @@
 						<script src="//unpkg.com/alpinejs" defer></script>
 
 						<div class="w-full  flex justify-center">
-							<div class="max-w-[919px] max-h-[350px]">
+							<div class="max-w-[100%] max-h-[632]">
 								<div
 								x-data="{ activeSlide: 1, slideCount: 6 }"
 								class="overflow-hidden relative"
@@ -159,50 +159,56 @@
 								<!-- Slider -->
 								<!-- You can remove x-init if you dont want to autoplay -->
 								<div
-									class="whitespace-nowrap transition-transform duration-500 ease-in-out"
+									class="whitespace-nowrap transition-transform duration-500 ease-in-out gallery"
 									:style="'transform: translateX(-' + (activeSlide - 1) * 100.5 + '%)'"
 									x-init="setInterval(() => { activeSlide = activeSlide < slideCount ? activeSlide + 1 : 1 }, 5000)"
 								>
 									<!-- Item 1 -->
 									<div class="inline-block w-full">
-									<img
-										src="img/works1.png"
-										alt=""
-									/>
+											<img
+												src="img/1fon.png"
+												alt=""
+												style="margin: 0 auto;"
+											/>
 									</div>
 									<!-- Item 2 -->
 									<div class="inline-block w-full">
 									<img
-										src="img/work2.png"
+										src="img/2fon.jpg"
 										alt=""
+										style="margin: 0 auto;"
 									/>
 									</div>
 									<!-- Item 3 -->
 									<div class="inline-block w-full">
 									<img
-										src="img/work3.png"
+										src="img/3fon.png"
 										alt=""
+										style="margin: 0 auto;"
 									/>
 									</div>
 									<!-- Item 4 -->
 									<div class="inline-block w-full">
 										<img
-										src="img/work4.png"
+										src="img/4fon.png"
 										alt=""
+										style="margin: 0 auto;"
 										/>
 									</div>
 									<!-- Item 5 -->
 									<div class="inline-block w-full">
 										<img
-										src="img/work5.png"
+										src="img/5fon.png"
 										alt=""
+										style="margin: 0 auto;"
 										/>
 									</div>
 									<!-- Item 6 -->
 									<div class="inline-block w-full">
 										<img
-										src="img/work6.png"
+										src="img/6fon.png"
 										alt=""
+										style="margin: 0 auto;"
 										/>
 									</div>
 								</div>
@@ -283,4 +289,10 @@
 				});
 			};
 	</script>-->
+	<script>
+		function windowOpen(theURL) 
+		{ 
+		window.open(theURL,'','toolbar=0,status=0,scrollbars=0,fullscreen=1'); 
+		} 
+	</script>
 </html>
