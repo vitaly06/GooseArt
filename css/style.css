@@ -275,9 +275,13 @@ li{
 }
 /* СЕКЦИЯ 3 */
 .free_lesson{
-  max-height: 300px;
+  max-height: 400px;
   box-sizing: border-box;
   padding: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-weight: 700;
   background: url("../img/lesson_bg.png")top left/100% 100% no-repeat;
 
@@ -296,6 +300,7 @@ li{
   margin-right: auto;
   height: 77px;
   width: 310px;
+  margin-bottom: 10px;
   border-radius: 20px;
   font-weight: 700;
   font-size: 24px;
@@ -1106,7 +1111,7 @@ div.form-example {
   .professions_h::after{
     display: block;
     content: url("../img/cube.png");
-    transform: scale(.6);
+    transform: scale(.7);
     vertical-align: middle;
   }
 
@@ -1192,6 +1197,7 @@ div.form-example {
     display: block;
     content: url("../img/cube.png");
     vertical-align: middle;
+    transform: scale(0.7);
   }
   .text{
     font-size: 14px;
@@ -1265,7 +1271,7 @@ div.form-example {
   }
   .contact_h::before{
     display: block;
-    transform: scale(0.8);
+    transform: scale(0.7);
   }
 }
 @media only screen and (max-width: 420px){
