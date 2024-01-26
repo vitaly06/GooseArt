@@ -80,7 +80,7 @@ html {
   display: none;
 }
 body {
-  background: url("/img/bg_new.png");
+  background: url("../img/bg_new.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -164,8 +164,8 @@ li{
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url("/img/turtle.png") bottom right/auto auto no-repeat,
-  url("/img/first_bg.png") top left/70% 100% no-repeat; 
+  background: url("../img/turtle.png") bottom right/auto auto no-repeat,
+  url("../img/first_bg.png") top left/70% 100% no-repeat; 
 }
 .welcome__textdiv {
   width: 50%;
@@ -234,7 +234,7 @@ li{
 .parent-info__title::before{
   display: inline-block;
   vertical-align: middle;
-  content: url("/img/cube.png");
+  content: url("../img/cube.png");
 }
 
 /* список маркерованный */
@@ -473,7 +473,7 @@ li{
 .for_h::before{
   display: inline-block;
   vertical-align: middle;
-  content: url("/img/cube.png");
+  content: url("../img/cube.png");
 }
 
 /* список маркерованный */
