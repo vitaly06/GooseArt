@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 		<link rel="stylesheet" href="css/style.css" />
 		<meta charset="UTF-8">
-		<script src="//code.jivo.ru/widget/NghDIeJReA" async></script>
+		<!--<script src="//code.jivo.ru/widget/NghDIeJReA" async></script>-->
 	</head>
 	<body>
 		<div id="openModal" class="modal">
@@ -44,8 +44,7 @@
 					<li id="hide"><a href="tel:+79117970686">+7 (911) 797-06-86</a></li>	
 					<li id="hide"><a href="https://t.me/manigoose" target="_blank"><img src="img/telegram.svg" alt="" class="telegram"></a></li>
 					<li id="hide"><a href="https://api.whatsapp.com/send/?phone=%2B79117970686&text&type=phone_number&app_absent=0" target="_blank"><img src="img/whatsapp.svg" alt="" class="whatsapp"></a></li>
-					<li id="hide"><a href="#openModal"><button class="record">записаться</button></a></li>
-					<!--<a href="#" id="pull">Меню</a>-->				
+					<li id="hide"><a href="#openModal"><button class="record">записаться</button></a></li>			
 				</ul>				
 			</div>
 		</header>
@@ -110,14 +109,20 @@
 
 		<main class="main5">
 			<section class="for">				
-				<div><h1 class="for_h">КОМУ <span>ПОДХОДИТ?</span></h1></div>
-				<div class="for_cards">
-					<div class="first_card">Тем, кто не имеет художественного образования и не работал в арт-индустрии, но хочет освоить творческую профессию.</div>
-					<div class="second_card">Выпускникам художественной школы или колледжа, которым требуется практика, чтобы в будущем работать в арт-индустрии</div>
-					<div class="first_card">Тем, кто хочет разнообразить рутину новым творческим хобби и обрести новые знакомства в арт-сфере</div>
-					<div class="second_card">Тем, кто хочет реализовать собственный творческий проект, но ощущает нехватку базовых знаний и навыков</div>
-
+				<div class="container3">
+					<h1 class="for_h">КОМУ <span>ПОДХОДИТ?</span></h1>					
+						<div class="parent-info__textdiv2">
+							<div class="container_text2">
+							<ul>
+								<li>Тем, кто не имеет художественного образования и не работал в арт-индустрии, но хочет освоить творческую профессию.</li>
+								<li>Выпускникам художественной школы или колледжа, которым требуется практика, чтобы в будущем работать в арт-индустрии</li>
+								<li>Тем, кто хочет разнообразить рутину новым творческим хобби и обрести новые знакомства в арт-сфере</li>
+								<li>Тем, кто хочет реализовать собственный творческий проект, но ощущает нехватку базовых знаний и навыков</li>
+							</ul>	
+							</div>			
+					</div>					
 				</div>
+				<img src="img/eight.png" alt="" class="eight">
 			</section>
 		</main>
 
@@ -127,10 +132,11 @@
 					<h1 class="works_h">РАБОТЫ <span>КУРАТОРА</span></h1>
 					<div class="block_works">
 						<div class="text">
-							<p>Куратором нашей школы является опытный художник и дизайнер с многолетним опытом работы в арт-индустрии. Она работала в крупных междунородных компаниях, таких как:</p>
+							<img src="img/masha.png" class="masha">
+							<p class="padding1">Куратором нашей школы является опытный художник и дизайнер с многолетним опытом работы в арт-индустрии. Она работала в крупных междунородных компаниях, таких как:</p>
 							<ul class="work_list">
-								<li>RedBark Studio (2D-художник,concept artist, visual development ) Минск</li>
-								<li>Saber Interactive Санкт-Петербург, 2D-художник</li>
+								<li class="padding2">RedBark Studio (2D-художник,concept artist, visual development ) Минск</li>
+								<li class="padding3">Saber Interactive Санкт-Петербург, 2D-художник</li>
 								<li>Saritasa Калифорния 2D-художник</li>
 								<li>ROCKSTONE Санкт-Петербург 2D-художник</li>
 							</ul>
@@ -271,21 +277,6 @@
 		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A40d278621081333a7ce5fa63ada32adba9c589817ec1bc49a3a9a81137b33d1c&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
 	</div>
 	</body>
-	<!--<script>		
-		
-			const smoothLinks = document.querySelectorAll('a[href^="!"]') ;
-			for (let smoothLink of smoothLinks) {
-				smoothLink.addEventListener('click', function (e) {
-					e.preventDefault();
-					const id = smoothLink.getAttribute('href');
-
-					document.querySelector(id).scrollIntoView({
-						behavior: 'smooth',
-						block: 'start'
-					});
-				});
-			};
-	</script>-->
 	<script>
 		function windowOpen(theURL) 
 		{ 
