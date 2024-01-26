@@ -80,7 +80,7 @@ html {
   display: none;
 }
 body {
-  background: url("../img/bg_new.png");
+  background: url("/img/bg_new.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -104,7 +104,7 @@ body {
   display: none;
 }*/
 .container{
-  max-width: 695px;
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -125,6 +125,14 @@ p{
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.telegram{
+  max-height: 35px;
+  width: auto;
+}
+.whatsapp{
+  max-height: 35px;
+  width: auto;
 }
 .gradient{
   background: linear-gradient(90.25deg, #3C99FB 20.81%, rgba(203, 95, 250, 0.8) 74.62%);
@@ -155,8 +163,8 @@ li{
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url("../img/turtle.png") bottom right/auto auto no-repeat,
-  url("../img/first_bg.png") top left/70% 100% no-repeat;
+  background: url("/img/turtle.png") bottom right/auto auto no-repeat,
+  url("/img/first_bg.png") top left/70% 100% no-repeat;
 }
 .welcome__textdiv {
   width: 50%;
@@ -196,6 +204,7 @@ li{
 /* секция 2*/
 .main2 {
   margin-top: 20px;
+  margin-bottom: 35px;
   display: flex;
   max-width: 100%;
   position: relative;
@@ -224,7 +233,7 @@ li{
 .parent-info__title::before{
   display: inline-block;
   vertical-align: middle;
-  content: url("../img/cube.png");
+  content: url("/img/cube.png");
 }
 
 /* список маркерованный */
@@ -734,7 +743,7 @@ div.form-example {
 }
 
 /* АДАПТИВ */
-@media only screen and (max-width:600px){
+@media only screen and (max-width:800px){
   #hide{
     overflow
     : hidden;
@@ -850,7 +859,7 @@ div.form-example {
     margin-top: 15px;
   }
   .welcome {
-    background: url("../img/first_bg.png") top left/150% 100% no-repeat;   
+    background: url("../img/first_bg.png") top left/150% 100% no-repeat;
   }
   .turtle{
     display: block;
@@ -861,7 +870,7 @@ div.form-example {
 @media only screen and (min-width: 1800px){
   .welcome{
     background: url("../img/turtle.png") 100% 50%/auto 100% no-repeat,
-    url("../img/first_bg.png") top left/80% 100% no-repeat;    
+    url("../img/first_bg.png") top left/80% 100% no-repeat;
   }
   .welcome__text{
     font-size: 30px;

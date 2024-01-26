@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="htttp://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/studentsEdit.css">
+</head>
+<body>
+    <div class="panel">
+        <div class="header">
+            <div class="btn1"><a href="/adminpanel">Панель админа</a></div>
+        </div>
+        <div class="right-side">
+            <form action="">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>ФИО</th>
+                        <th>Номер</th>
+                        <th>Группа</th>
+                        <th>Специальность</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><span>ФИО</span></td>
+                        <td><span>Номер</span></td>
+                        <td><select name="groupe" id="">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select></td>
+                        <td><select name="special" id="">
+                            <option value="2d">2D-Художник</option>
+                            <option value="3d">3D-Художник</option>
+                            <option value="game">Игровая графика</option>
+                            <option value="web">Веб-дизайн</option>
+                        </select></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <button class="submit">Сохранить</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

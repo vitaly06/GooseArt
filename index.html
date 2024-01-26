@@ -1,19 +1,12 @@
-<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
 <!DOCTYPE html>
-<!-- Оболочка документа, указываем язык содержимого -->
-<html lang="ru">
-	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+<html lang="en" xmlns:th="htttp://thymeleaf.org">
 	<head>
-		<!-- Заголовок страницы в браузере -->
 		<title>FLEXBOX</title>
-		<!-- Адаптив -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-		<!-- Подключаем CSS -->
 		<link rel="stylesheet" href="css/style.css" />
-		<!-- Кодировка страницы -->
 		<meta charset="UTF-8">
+		<script src="//code.jivo.ru/widget/NghDIeJReA" async></script>
 	</head>
-	<!-- Отображаемое тело страницы -->
 	<body>
 		<div id="openModal" class="modal">
 			<div class="modal-dialog">
@@ -23,7 +16,7 @@
 				  <a href="#close" title="Close" class="close">×</a>
 				</div>
 				<div class="modal-body">    
-				  <form method="post" action="#" class="form-example">
+				  <form th:method="POST" th:action="@{/}" class="form-example" th:object="${person}">
 					<div class="form-example">
 					<label class="modall" for="name">ФИО:</label>
 					<input class="modali" style="border: 1px solid black; transform: translateZ(0); color: black;" type="text" name="name" id="name" required>
@@ -47,7 +40,11 @@
 					<li id="hide"><a href="#us" class="gradient">о нас</a></li>
 					<li id="hide"><a href="#professions" id="hide">профессии</a></li>
 					<li id="hide"><a href="#contacts">контактные данные</a></li>
-					<li id="hide"><a href="#openModal"><button class="record">записаться</button></a></li>	
+					
+					<li id="hide"><a href="tel:+79117970686">+7 (911) 797-06-86</a></li>	
+					<li id="hide"><a href="https://t.me/manigoose" target="_blank"><img src="img/telegram.svg" alt="" class="telegram"></a></li>
+					<li id="hide"><a href="https://api.whatsapp.com/send/?phone=%2B79117970686&text&type=phone_number&app_absent=0" target="_blank"><img src="img/whatsapp.svg" alt="" class="whatsapp"></a></li>
+					<li id="hide"><a href="#openModal"><button class="record">записаться</button></a></li>
 					<!--<a href="#" id="pull">Меню</a>-->				
 				</ul>				
 			</div>
@@ -59,7 +56,7 @@
 					<div class="welcome__textdiv">
 						<h1 class="welcome__title">GooseArt School</h1>
 						<h2 class="welcome__title2">Школа компьютерной графики</h2>
-						<p class="welcome__text">Школа рисунка и цифровой графики "GooseArt" предлагает обучение 3D и 2D рисункам, моделированию и веб-дизайну. В нашей школе вы сможете освоить различные программы для создания качественных проектов, такие как Adobe Photoshop, Adobe Illustrator, Blender и другие. Кроме того, мы планируем внедрить программирование в нашу образовательную программу, чтобы наши студенты могли создавать не только красивые, но и функциональные проекты.</p>
+						<p class="welcome__text">Школа рисунка и цифровой графики "GooseArt" предлагает обучение 2D и 3D рисункам, моделированию и веб-дизайну. В нашей школе вы сможете освоить различные программы для создания качественных проектов, такие как Adobe Photoshop, Adobe Illustrator, Blender и другие. Кроме того, мы планируем внедрить программирование в нашу образовательную программу, чтобы наши студенты могли создавать не только красивые, но и функциональные проекты.</p>
 						<a href="#openModal"><button class="record2">Записаться</button></a>
 						<img src="img/turtle.png" alt="" class="turtle">
 					</div>
@@ -168,15 +165,15 @@
 											<img
 												src="img/1fon.png"
 												alt=""
-												style="margin: 0 auto;"
+												style="margin: 0 auto; border-radius: 15px;"
 											/>
 									</div>
 									<!-- Item 2 -->
 									<div class="inline-block w-full">
 									<img
-										src="img/2fon.jpg"
+										src="img/2fon.png"
 										alt=""
-										style="margin: 0 auto;"
+										style="margin: 0 auto; border-radius: 15px;"
 									/>
 									</div>
 									<!-- Item 3 -->
@@ -184,7 +181,7 @@
 									<img
 										src="img/3fon.png"
 										alt=""
-										style="margin: 0 auto;"
+										style="margin: 0 auto; border-radius: 15px;"
 									/>
 									</div>
 									<!-- Item 4 -->
@@ -192,7 +189,7 @@
 										<img
 										src="img/4fon.png"
 										alt=""
-										style="margin: 0 auto;"
+										style="margin: 0 auto; border-radius: 15px;"
 										/>
 									</div>
 									<!-- Item 5 -->
@@ -200,7 +197,7 @@
 										<img
 										src="img/5fon.png"
 										alt=""
-										style="margin: 0 auto;"
+										style="margin: 0 auto; border-radius: 15px;"
 										/>
 									</div>
 									<!-- Item 6 -->
@@ -208,7 +205,7 @@
 										<img
 										src="img/6fon.png"
 										alt=""
-										style="margin: 0 auto;"
+										style="margin: 0 auto; border-radius: 15px;"
 										/>
 									</div>
 								</div>
