@@ -158,13 +158,14 @@ li{
 }
 .main {
 }
+
 .welcome {
   min-height: 640px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: url("/img/turtle.png") bottom right/auto auto no-repeat,
-  url("/img/first_bg.png") top left/70% 100% no-repeat;
+  url("/img/first_bg.png") top left/70% 100% no-repeat; 
 }
 .welcome__textdiv {
   width: 50%;
