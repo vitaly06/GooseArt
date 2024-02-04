@@ -1197,33 +1197,7 @@ div.form-example {
     height: auto;
   }
 }
-/* БЛОКИ */
-/*@media only screen and (max-width: 1110px){
-  /* карты *//*
-  .for_h{
-    text-align: center;
-    margin: 30px auto;
-  }
-  .for_cards{
-    text-align: center;
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 1;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-  }
-  .first_card{
-    margin-bottom: 1rem;
-    width: 75%;
-    border-radius: 15px;
-  }
-  .second_card{
-    margin-bottom: 1rem;
-    width: 75%;
-    border-radius: 15px;
-  }
-}*/
+
 @media only screen and (max-width: 1350px){
   .container3{
     max-width: 90%;
@@ -1414,6 +1388,13 @@ div.form-example {
   }
 }
 @media only screen and (max-width: 520px){
+  .masha{
+    max-width: 150px;
+    height: auto;
+  }
+  .masha_h{
+    font-size: 30px;
+  }
   .block_works{
     margin-top: 30px;
   }
@@ -1428,6 +1409,19 @@ div.form-example {
   }
 }
 @media only screen and (max-width: 400px){
+  .masha{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+  }
+  .padding1{
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 700px){
+  .masha_h{
+    text-align: center;
+  }
   .masha{
     position: relative;
     display: block;
