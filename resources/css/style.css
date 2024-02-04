@@ -80,7 +80,7 @@ html {
   display: none;
 }
 body {
-  background: url("../img/bg_new.png");
+  background: url("../imgs/bg_new.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -140,7 +140,7 @@ p{
   -webkit-text-fill-color: transparent;
 }
 li{
-  padding: 25px 0; 
+  padding: 25px 0;
 }
 .record{
   color: #FFFFFF;
@@ -164,8 +164,8 @@ li{
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url("../img/turtle.png") bottom right/auto auto no-repeat,
-  url("../img/first_bg.png") top left/70% 100% no-repeat; 
+  background: url("../imgs/turtle.png") bottom right/auto auto no-repeat,
+  url("../imgs/first_bg.png") top left/70% 100% no-repeat;
 }
 .welcome__textdiv {
   width: 50%;
@@ -177,6 +177,12 @@ li{
   font-size: 64px;
   font-weight: 700;
   line-height: 0.9;
+}
+.purple{
+  color: #DB00FF;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: 'Ubuntu', sans-serif;
 }
 .welcome__text {
   text-align: center;
@@ -216,8 +222,8 @@ li{
   display: flex;
   align-items: center;
   flex-direction: column;
-  
-  
+
+
 }
 /* заголовок*/
 .parent-info__title{
@@ -225,16 +231,10 @@ li{
   font-size: 48px;
   font-weight: 700;
 }
-.parent-info__title span{
-  background: linear-gradient(90.53deg, #31C6FC 30.04%, #B826E9 92.19%),
-  linear-gradient(0deg, #FFFFFF, #FFFFFF);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 .parent-info__title::before{
   display: inline-block;
   vertical-align: middle;
-  content: url("../img/cube.png");
+  content: url("../imgs/cube.png");
 }
 
 /* список маркерованный */
@@ -249,7 +249,7 @@ li{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../img/rectangle.png") top left/100% 100% no-repeat;
+  background: url("../imgs/rectangle.png") top left/100% 100% no-repeat;
   z-index: 299;
   border-radius: 15px;
 }
@@ -263,7 +263,7 @@ li{
   font-weight: 700;
   display: flex;
   flex-direction: column;
- align-items: flex-start;
+  align-items: flex-start;
 }
 .parent-info__textdiv ul li::before{
   content: "\2022"; /* юникод точки */
@@ -293,13 +293,13 @@ li{
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  background: url("../img/lesson_bg.png")top left/100% 100% no-repeat;
+  background: url("../imgs/lesson_bg.png")top left/100% 100% no-repeat;
 
 
 }
 .h_free{
   text-align: center;
-  
+
   font-size: 48px;
   line-height: 1.5;
 }
@@ -318,9 +318,6 @@ li{
   background: radial-gradient(106.56% 100% at 50% 0%, #31E4FA 0%, #2F6CFF 63.3%, rgba(223, 29, 255, 0.89) 100%);
 }
 /* СЕКЦИЯ 4*/
-.sova2{
-  display: none;
-}
 .main4{
 }
 .professions{}
@@ -336,7 +333,7 @@ li{
 }
 .professions_h::after{
   display: inline-block;
-  content: url("../img/cube.png");
+  content: url("../imgs/cube.png");
   vertical-align: middle;
 }
 .professions_h span{
@@ -356,15 +353,13 @@ li{
   line-height: 1.6;
   background: radial-gradient(106.56% 100% at 50% 0%, #31E4FA 0%, #2F6CFF 63.3%, rgba(223, 29, 255, 0.89) 100%);
 }
-.sova{
-  max-height: 400px;
-}
 
 /* 1 LINE OF CARDS */
 .container4_firstline{
+  flex-wrap: wrap;
   margin: 0 auto;
-  max-width: 796px;
-  max-height: 500px;
+  max-width: 100%;
+  max-height: 900px;
   display: flex;
   justify-content: space-evenly;
   align-items: flex-end;
@@ -379,18 +374,6 @@ li{
   /* CHANGE PICTURE */
   background: top right/auto auto no-repeat;
 }
-.container4_secondline{
-  margin: 0 auto;
-  max-width: 100%;
-  max-height: 440px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: flex-end;
-}
-/*.sova{
-  max-width: 298px;
-  flex-wrap: wrap;
-}*/
 .card3{
   /* CHANGE PICTURE */
   background: top left/auto auto no-repeat;
@@ -399,48 +382,7 @@ li{
   /* CHANGE PICTURE */
   background: top right/auto auto no-repeat;
 }
-/* SECTION 5*/
 
-/*.main5{
-  margin-top: 20px;
-  max-width: 100%;
-}
-.for_h::before{
-  display: inline-block;
-  content: url("../img/cube2.png");
-  vertical-align: middle;
-}
-.for_h{
-  margin-left: 7%;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 1;
-}
-.for_h span{
-  background: linear-gradient(90.53deg, #31C6FC 30.04%, #B826E9 92.19%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.for_cards{
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 1;
-  display: flex;
-}
-.first_card{
-  box-sizing: border-box;
-  padding: 3%;
-  background: url("../img/for1.png") no-repeat;
-  background-size: cover;
-  width: 25%;
-}
-.second_card{
-  box-sizing: border-box;
-  padding: 3%;
-  background: url("../img/for2.png") no-repeat;
-  background-size: cover;
-  width: 25%;
-}*/
 /* секция 5*/
 .main5 {
   margin-top: 20px;
@@ -455,8 +397,8 @@ li{
   display: flex;
   align-items: center;
   flex-direction: column;
-  
-  
+
+
 }
 /* заголовок*/
 .for_h{
@@ -473,7 +415,7 @@ li{
 .for_h::before{
   display: inline-block;
   vertical-align: middle;
-  content: url("../img/cube.png");
+  content: url("../imgs/cube.png");
 }
 
 /* список маркерованный */
@@ -508,7 +450,7 @@ li{
   font-weight: 700;
   display: flex;
   flex-direction: column;
- align-items: flex-start;
+  align-items: flex-start;
 }
 .parent-info__textdiv2 ul li::before{
   content: "\2022"; /* юникод точки */
@@ -551,7 +493,7 @@ li{
 }
 .works_h::before{
   display: inline-block;
-  content: url("../img/cube.png");
+  content: url("../imgs/cube.png");
   vertical-align: middle;
 }
 .masha{
@@ -573,7 +515,7 @@ li{
 }
 /* блок */
 .block_works{
-  
+
   background: radial-gradient(65.97% 92.77% at 113.3% 120.61%, rgba(62, 238, 227, 0.5) 0%, rgba(62, 69, 238, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
   background: radial-gradient(60.52% 85.11% at 9.86% -26.12%, rgba(223, 29, 255, 0.35) 0%, rgba(72, 205, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
   background: linear-gradient(97.94deg, rgba(255, 255, 255, 0.297) 0%, rgba(255, 255, 255, 0.162) 99.99%, rgba(37, 40, 58, 0.105) 100%);
@@ -607,7 +549,7 @@ li{
 .main7{
   margin-top: 20px;
 }
-.pastwork_container{ 
+.pastwork_container{
   max-width: 982px;
   margin: 0 auto;
 }
@@ -625,7 +567,7 @@ li{
 }
 .pastwork_h::before{
   display: inline-block;
-  content: url("../img/cube3.png");
+  content: url("../imgs/cube3.png");
   vertical-align: middle;
 }
 /* блок */
@@ -665,7 +607,7 @@ li{
 }
 .contact_h::before{
   display: inline-block;
-  content: url("../img/cube4.png");
+  content: url("../imgs/cube4.png");
   vertical-align: middle;
 }
 .city{
@@ -686,7 +628,7 @@ li{
 .line{
   border: none;
   height: 2px;
-  background-color: #ffffff; 
+  background-color: #ffffff;
 }
 
 /* свойства модального окна по умолчанию */
@@ -699,7 +641,7 @@ li{
   background: rgba(0,0,0,0.5); /* цвет фона */
   z-index: 1050;
   opacity: 0; /* по умолчанию модальное окно прозрачно */
-  -webkit-transition: opacity 200ms ease-in; 
+  -webkit-transition: opacity 200ms ease-in;
   -moz-transition: opacity 200ms ease-in;
   transition: opacity 200ms ease-in; /* анимация перехода */
   pointer-events: none; /* элемент невидим для событий мыши */
@@ -719,15 +661,15 @@ li{
   margin: 10px;
 }
 @media (min-width: 576px) {
-.modal-dialog {
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 18px;
-  font-weight: 700;
+  .modal-dialog {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
     max-width: 500px;
     margin: 30px auto; /* для отображения модального окна по центру */
+  }
 }
-}
-/* свойства для блока, содержащего контент модального окна */ 
+/* свойства для блока, содержащего контент модального окна */
 .modal-content {
   background: linear-gradient(90.53deg, #31C6FC 30.04%, #B826E9 92.19%);
   position: relative;
@@ -747,10 +689,10 @@ li{
   outline: 0;
 }
 @media (min-width: 768px) {
-.modal-content {
+  .modal-content {
     -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
     box-shadow: 0 5px 15px rgba(0,0,0,.5);
-}
+  }
 }
 /* свойства для заголовка модального окна */
 .modal-header {
@@ -799,7 +741,7 @@ li{
 .modal-body {
   margin: 0 auto;
   color: white;
-position: relative;
+  position: relative;
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -842,7 +784,7 @@ div.form-example {
   font-size: 16px;
   line-height: 1.6;
   background: radial-gradient(106.56% 100% at 50% 0%, #31E4FA 0%, #2F6CFF 63.3%, rgba(223, 29, 255, 0.89) 100%);
-  
+
 }
 
 /* АДАПТИВ */
@@ -949,9 +891,9 @@ div.form-example {
     width: 45%;
   }
   .welcome {
-    background: url("../img/turtle.png") bottom right/50% auto no-repeat,
-    url("../img/first_bg.png") top left/80% 100% no-repeat;
-    
+    background: url("../imgs/turtle.png") bottom right/50% auto no-repeat,
+    url("../imgs/first_bg.png") top left/80% 100% no-repeat;
+
   }
 }
 @media only screen and (max-width:700px){
@@ -962,7 +904,7 @@ div.form-example {
     margin-top: 15px;
   }
   .welcome {
-    background: url("../img/first_bg.png") top left/150% 100% no-repeat;
+    background: url("../imgs/first_bg.png") top left/150% 100% no-repeat;
   }
   .turtle{
     display: block;
@@ -972,8 +914,8 @@ div.form-example {
 }
 @media only screen and (min-width: 1800px){
   .welcome{
-    background: url("../img/turtle.png") 100% 50%/auto 100% no-repeat,
-    url("../img/first_bg.png") top left/80% 100% no-repeat;
+    background: url("../imgs/turtle.png") 100% 50%/auto 100% no-repeat,
+    url("../imgs/first_bg.png") top left/80% 100% no-repeat;
   }
   .welcome__text{
     font-size: 30px;
@@ -1026,7 +968,7 @@ div.form-example {
 }
 @media only screen and (max-width: 1050px){
   .parent-info__title{
-    font-size: 18px;
+    font-size: 30px;
   }
   .container_text ul{
     font-size: 20px;
@@ -1034,6 +976,9 @@ div.form-example {
   .dragon{
     max-width: 60%;
     height: auto;
+  }
+  .parent-info__title::before{
+    transform: scale(0.7);
   }
 }
 @media only screen and (max-width: 910px){
@@ -1045,7 +990,7 @@ div.form-example {
 
 @media only screen and (max-width: 760px){
   .parent-info__title{
-    font-size: 14px;
+    font-size: 25px;
   }
   .container2{
     max-width: 75%;
@@ -1080,8 +1025,8 @@ div.form-example {
     max-height: 50%;
   }
   .parent-info__title::before{
-    content: '';
-  } 
+    transform: scale(0.7);
+  }
 }
 @media only screen and (max-width: 580px){
   .parent-info__title{
@@ -1123,7 +1068,7 @@ div.form-example {
     margin-left: 20%;
     margin-bottom: 30px;
   }
-  .parent-info__textdiv{    
+  .parent-info__textdiv{
     min-width: 1200px;
   }
   .parent-info__textdiv ul{
@@ -1135,7 +1080,7 @@ div.form-example {
     margin-left: 40%;
     margin-bottom: 30px;
   }
-  .parent-info__textdiv{    
+  .parent-info__textdiv{
     min-width: 1200px;
   }
   .parent-info__textdiv ul{
@@ -1178,11 +1123,6 @@ div.form-example {
   .hide_sova{
     display: none;
   }
-  .sova2{
-    max-height: 400px;
-    display: block;
-    margin: 0 auto;
-  }
   .container4_secondline{
     margin: 0 auto;
     max-width: 796px;
@@ -1211,7 +1151,7 @@ div.form-example {
 @media only screen and (max-width: 460px){
   .professions_h::after{
     display: block;
-    content: url("../img/cube.png");
+    content: url("../imgs/cube.png");
     transform: scale(.7);
     vertical-align: middle;
   }
@@ -1229,10 +1169,6 @@ div.form-example {
     line-height: 1.6;
   }
 
-  .sova2{
-    max-height: 250px;
-    width: auto;
-  }
 }
 @media only screen and (max-width: 650px){
   .container4_firstline div{
@@ -1246,7 +1182,7 @@ div.form-example {
     height: auto;
   }
 }
-/* БЛОКИ */ 
+/* БЛОКИ */
 /*@media only screen and (max-width: 1110px){
   /* карты *//*
   .for_h{
@@ -1310,7 +1246,7 @@ div.form-example {
 }
 @media only screen and (max-width: 1050px){
   .for_h{
-    font-size: 18px;
+    font-size: 30px;
   }
   .container_text2 ul{
     font-size: 20px;
@@ -1354,7 +1290,7 @@ div.form-example {
   }
   .for_h{
     margin: 10px 0;
-    font-size: 24px;
+    font-size: 30px;
   }
   .parent-info__textdiv2{
     margin: 0px;
@@ -1366,9 +1302,7 @@ div.form-example {
     max-width: 100%;
     max-height: 50%;
   }
-  .for_h::before{
-    content: '';
-  } 
+  
 }
 @media only screen and (max-width: 580px){
   .for_h{
@@ -1380,6 +1314,9 @@ div.form-example {
   }
   .parent-info__textdiv2 ul li{
     margin: -15px 0;
+  }
+  .for_h::before{
+    content: '';
   }
 }
 @media only screen and (max-width: 350px){
@@ -1410,7 +1347,7 @@ div.form-example {
     margin-left: 20%;
     margin-bottom: 30px;
   }
-  .parent-info__textdiv2{    
+  .parent-info__textdiv2{
     min-width: 1200px;
   }
   .parent-info__textdiv2 ul{
@@ -1422,13 +1359,13 @@ div.form-example {
     margin-left: 40%;
     margin-bottom: 30px;
   }
-  .parent-info__textdiv2{    
+  .parent-info__textdiv2{
     min-width: 1200px;
   }
   .parent-info__textdiv2 ul{
     font-size: 36px;
   }
-}  
+}
 /* РАБОТЫ КУРАТОРА */
 @media only screen and (max-width: 1100px){
   .works_h{
@@ -1487,14 +1424,14 @@ div.form-example {
 }
 @media only screen and (max-width: 450px){
   .works_h{
-    font-size: 36px; 
+    font-size: 36px;
     text-align: center;
     margin: 0 auto;
     margin-bottom: 20px;
   }
   .works_h::before{
     display: block;
-    content: url("../img/cube.png");
+    content: url("../imgs/cube.png");
     vertical-align: middle;
     transform: scale(0.7);
   }
@@ -1524,7 +1461,7 @@ div.form-example {
   }
   .pastwork_h::before{
     display: block;
-    content: url("../img/cube3.png");
+    content: url("../imgs/cube3.png");
     vertical-align: middle;
   }
   .pastwork_h span{
@@ -1542,7 +1479,7 @@ div.form-example {
   }
   .pastwork_h::before{
     display: block;
-    content: url("../img/cube3.png");
+    content: url("../imgs/cube3.png");
     vertical-align: middle;
     transform: scale(.7);
   }
@@ -1554,7 +1491,7 @@ div.form-example {
   }
   .pastwork_h::before{
     display: block;
-    content: url("../img/cube3.png");
+    content: url("../imgs/cube3.png");
     vertical-align: middle;
     transform: scale(.7);
   }
