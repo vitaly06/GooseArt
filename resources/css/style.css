@@ -217,13 +217,19 @@ li{
   position: relative;
 }
 .parent-info {
+  margin: 0 auto;
+  max-width: 1098px;
+  min-width: 1098px;
   min-height: 600px;
   color: #FFFFFF;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
 
 
+}
+.container2 {
+  
 }
 /* заголовок*/
 .parent-info__title{
@@ -244,7 +250,6 @@ li{
   width: 100%;
 }
 .parent-info__textdiv{
-  margin-left: 70px;
   max-width: 865px;
   display: flex;
   justify-content: center;
@@ -272,11 +277,8 @@ li{
   display: inline-block; /* Расстояние между точкой и текстом */
   width: 1em; /* Задать значение расстояния */
 }
-.container2 {
-  max-width: 100%;
-}
 .dragon{
-  height: auto;
+  height: 70%;
   width: auto;
   z-index: 300;
   position: absolute;
@@ -392,13 +394,21 @@ li{
   position: relative;
 }
 .for {
+  margin: 0 auto;
+  min-width: 1098px;
+  max-width: 1098px;
   min-height: 600px;
   color: #FFFFFF;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
-
-
+  justify-content: flex-start;
+}
+.container3{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 /* заголовок*/
 .for_h{
@@ -425,7 +435,6 @@ li{
   width: 100%;
 }
 .parent-info__textdiv2{
-  margin-left: 70px;
   max-width: 865px;
   display: flex;
   justify-content: center;
@@ -459,11 +468,8 @@ li{
   display: inline-block; /* Расстояние между точкой и текстом */
   width: 1em; /* Задать значение расстояния */
 }
-.container3 {
-  max-width: 100%;
-}
 .eight{
-  height: auto;
+  height: 50%;
   width: auto;
   z-index: 300;
   position: absolute;
@@ -559,7 +565,8 @@ li{
   margin-top: 20px;
 }
 .pastwork_container{
-  max-width: 982px;
+  /*min-width: 982px;*/
+  max-width: 1098px;
   margin: 0 auto;
 }
 /* заголовок */
@@ -567,7 +574,7 @@ li{
   font-weight: 700;
   font-size: 48px;
   line-height: 1;
-  text-align: right;
+  text-align: center;
 }
 .pastwork_h span{
   background: linear-gradient(92deg, #31C6FC 46.4%, #BC21E8 94.38%);
@@ -957,6 +964,10 @@ div.form-example {
     font-size: 40px;
     text-align: center;
   }
+  .dragon{
+    height: 60%;
+    width: auto;
+  }
 }
 @media only screen and (max-width: 1270px){
   .container2{
@@ -977,8 +988,11 @@ div.form-example {
     margin-bottom: 20px;
   }
   .dragon{
-    max-width: 60%;
+    max-width: 50%;
     height: auto;
+  }
+  .parent-info{
+    min-width: 0;
   }
 }
 @media only screen and (max-width: 1050px){
@@ -989,7 +1003,7 @@ div.form-example {
     font-size: 20px;
   }
   .dragon{
-    max-width: 60%;
+    max-width: 45%;
     height: auto;
   }
   .parent-info__title::before{
@@ -998,8 +1012,8 @@ div.form-example {
 }
 @media only screen and (max-width: 910px){
   .dragon{
-    max-width: 55%;
-    height: auto;
+    height: 45%;
+    width: auto;
   }
 }
 
@@ -1022,6 +1036,9 @@ div.form-example {
   }
 }
 @media only screen and (max-width: 690px){
+  .parent-info{
+    min-width: 0;
+  }
   .container2{
     max-width: 100%;
   }
@@ -1068,35 +1085,37 @@ div.form-example {
 
 @media only screen and (min-width:1800px){
   .dragon{
-    height: 100%;
+    height: 70%;
     width: auto;
   }
-  .container2{
-    margin-left: 40%;
-  }
   .parent-info__textdiv{
-    min-width: 850px;
+    min-width: 1098px;
+    max-width: 1098px;
   }
 }
 @media only screen and (min-width:2150px){
   .container2{
-    margin-left: 20%;
     margin-bottom: 30px;
   }
   .parent-info__textdiv{
-    min-width: 1200px;
+    min-width: 1098px;
+    max-width: 1098px;
   }
   .parent-info__textdiv ul{
     font-size: 36px;
   }
+  .dragon{
+    height: auto;
+    width: 33%;
+  }
 }
 @media only screen and (min-width:2500px){
   .container2{
-    margin-left: 40%;
     margin-bottom: 30px;
   }
   .parent-info__textdiv{
-    min-width: 1200px;
+    max-width: 1098px;
+    min-width: 1098px;
   }
   .parent-info__textdiv ul{
     font-size: 36px;
@@ -1222,8 +1241,15 @@ div.form-example {
     max-width: 80%;
     margin-bottom: 20px;
   }
+  .eight{
+    max-height: 45%;
+    width: auto;
+  }
 }
-@media only screen and (max-width: 1090px){
+@media only screen and (max-width: 1100px){
+  .for{
+    min-width: 0;
+  }
   .container3{
     max-width: 70%;
     margin-bottom: 20px;
@@ -1241,8 +1267,11 @@ div.form-example {
     font-size: 20px;
   }
   .eight{
-    max-width: 60%;
-    height: auto;
+    max-height: 45%;
+    width: auto;
+  }
+  .parent-info__textdiv2{
+    max-width: 100%;
   }
 }
 @media only screen and (max-width: 910px){
@@ -1321,23 +1350,24 @@ div.form-example {
 
 @media only screen and (min-width:1800px){
   .eight{
-    height: 100%;
+    height: 60%;
     width: auto;
   }
   .container3{
-    margin-left: 40%;
+    
   }
   .parent-info__textdiv2{
-    min-width: 850px;
+    max-width: 1098px;
+    min-width: 1098px;
   }
 }
 @media only screen and (min-width:2150px){
   .container3{
-    margin-left: 20%;
     margin-bottom: 30px;
   }
   .parent-info__textdiv2{
-    min-width: 1200px;
+    min-width: 1098px;
+    max-width: 1098px;
   }
   .parent-info__textdiv2 ul{
     font-size: 36px;
@@ -1345,11 +1375,11 @@ div.form-example {
 }
 @media only screen and (min-width:2500px){
   .container3{
-    margin-left: 40%;
     margin-bottom: 30px;
   }
   .parent-info__textdiv2{
-    min-width: 1200px;
+    min-width: 1098px;
+    max-width: 1098px;
   }
   .parent-info__textdiv2 ul{
     font-size: 36px;
